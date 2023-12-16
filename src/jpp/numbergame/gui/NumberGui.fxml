@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="830.0" maxWidth="800.0" minHeight="830.0" minWidth="800.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="830.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jpp.numbergame.gui.NumberGui">
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox fx:id="topBar" maxHeight="30.0" minHeight="30.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <StackPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0">
+               <children>
+                  <Pane fx:id="board" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" onKeyPressed="#keyPressed" prefHeight="800.0" prefWidth="800.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;">
+                     <children>
+                        <StackPane maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="200.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="400.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="600.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutY="200.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="200.0" layoutY="200.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="400.0" layoutY="200.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="600.0" layoutY="200.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutY="400.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="200.0" layoutY="400.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="400.0" layoutY="400.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="600.0" layoutY="400.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutY="600.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="200.0" layoutY="600.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="400.0" layoutY="600.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                        <StackPane layoutX="600.0" layoutY="600.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;" />
+                     </children>
+                  </Pane>
+                  <StackPane fx:id="gameOverScreen">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#867e7e" height="800.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+                        <AnchorPane>
+                           <children>
+                              <Label layoutX="61.0" layoutY="48.0" text="GAME OVER!" textFill="#9e2b2b">
+                                 <font>
+                                    <Font size="120.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="scoreDisplayGameOver" alignment="CENTER" layoutX="2.0" layoutY="224.0" prefHeight="50.0" prefWidth="800.0" text="Score: " textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="playerName" layoutX="155.0" layoutY="322.0" prefHeight="50.0" prefWidth="160.0" promptText="My Name" />
+                              <Button layoutX="335.0" layoutY="322.0" mnemonicParsing="false" onAction="#submitScore" prefHeight="50.0" prefWidth="133.0" text="Submit" />
+                              <Button fx:id="startGameButton" layoutX="480.0" layoutY="322.0" mnemonicParsing="false" onAction="#startGame" prefHeight="50.0" prefWidth="133.0" text="Start new Game" />
+                              <VBox fx:id="scoreboard" layoutX="152.0" layoutY="400.0">
+                                 <children>
+                                    <HBox maxHeight="40.0" maxWidth="400.0" minHeight="40.0" minWidth="400.0" prefHeight="40.0" prefWidth="400.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Highscores" textFill="#251f1f" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="40.0" maxWidth="500.0" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+       
+   </children>
+</AnchorPane>
