@@ -7,9 +7,10 @@ The Program was created in IntelliJ Idea using Java 19, JavaFX 17 and Gradle as 
 
 ## Run the Program using IntelliJ Idea
 
+### Clone the repository 
 * Clone the repository and create a new Project from existing source in IntelliJ
 * Select "Import from external Model" and then Gradle
 * You might need to specify the preferred JDK now, the JavaFX Libraries should be taken care off by Gradle
  
-### Executing program
+### Execute the program
 * Use the 2048run configuration to run the Project
