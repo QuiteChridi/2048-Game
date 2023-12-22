@@ -2,26 +2,14 @@
 
 This game was created as part of university coursework it's a recreation of the well known [2048](https://en.wikipedia.org/wiki/2048_(video_game), "2048").
 
-## Description
+## Versions used
+The Program was created in IntelliJ Idea using Java 19, JavaFX 17 and Gradle as a build tool. It is recommended to use the same Versions as not to encounter problems though newer Versions should work as well. 
 
-An in-depth paragraph about your project and overview of use.
+## Run the Program using IntelliJ Idea
 
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
+* Clone the repository and create a new Project from existing source in IntelliJ
+* Select "Import from external Model" and then Gradle
+* You might need to specify the preferred JDK now, the JavaFX Libraries should be taken care off by Gradle
+ 
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Use the 2048run configuration to run the Project
